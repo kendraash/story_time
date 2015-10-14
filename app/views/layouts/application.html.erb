@@ -10,10 +10,42 @@
   <%= flash[:alert] %>
   <%= flash[:notice] %>
 
-  <div class="row" id ="home-btn">
+  <!-- <div class="row" id ="home-btn">
       <a href="/">Story Time |</a>
       <a href="/"><img src="assets/book-icon.png" alt="" /></a>
-  </div>
+  </div> -->
+
+
+
+  <nav class="navbar navbar-default" id ="home-btn">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Story Time</a>
+      </div>
+
+      <ul class="nav navbar-nav">
+        <!-- <li><a href="/">Story Time |</a></li> -->
+        <li><a href="/"><img src="assets/book-icon.png" alt="" /></a></li>
+        <!-- <li><a href="#">LIFESTYLE</a></li>
+        <li><a href="#">FASHION&BEAUTY</a></li>
+        <li><a href="#">BOOKS</a></li> -->
+
+
+
+        <li><a href="/"><img style="margin-left: 15px; margin-right: -15px;" class="socialMedia" src="http://www.10weekstofit.com/twitter-circle-300px.png"</i>
+        </a></li>
+
+        <li><a href="/"><img class="socialMedia" src="http://blueclawrestaurant.com/images/Round_Facebook_Icon_3.png"></a></li>
+
+        <!-- <select  id="menu">
+          <option value="login">Login</option>
+          <option value="addEmail">Add e-mail</option>
+          <option value="post">Post</option>
+        </select> -->
+
+      </ul>
+    </div>
+  </nav>
 
   <div class="container">
     <%= yield %>
