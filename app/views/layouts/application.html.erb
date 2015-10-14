@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= flash[:alert] %>
+  <%= flash[:notice] %>
 
-<%= yield %>
+  <div class="row navbar">
+    <div class="two column" id ="home-btn">
+      <a href="/">All stories</a>
+    </div>
+    <div class="ten column">
+      Story Time
+    </div>
+  </div>
+
+  <div class="container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>

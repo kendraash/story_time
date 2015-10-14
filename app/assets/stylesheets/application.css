@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+a {
+
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+
+#home-btn {
+  background-color: grey;
+  font-size: 1.5em;
+  padding-left: 20px;
+}

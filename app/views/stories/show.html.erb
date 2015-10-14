@@ -1,0 +1,9 @@
+<div class=''>
+  <h1><%= @story.title %></h1>
+</div>
+<% @story.sentences.each do |sentence| %>
+  <p><%= sentence.body %></p>
+<% end %>
+<h4>Add a sentence</h4>
+
+<%= render '/sentences/form' %>
