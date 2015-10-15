@@ -1,10 +1,12 @@
 <div class=''>
   <h1><%= @story.title %></h1>
-  <img class="img-round" src="<%= @story.image %>" />
+  <div class="img-round">
+    <%= image_tag(@story.image) %>
+  </div>
 </div>
 <% @story.sentences.each do |sentence| %>
   <%= sentence.body %> <br>
 <% end %>
-<h5>Add a sentence</h5>
+<h4>Add a sentence</h4>
 
 <%= render '/sentences/form' %>

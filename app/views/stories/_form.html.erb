@@ -5,7 +5,8 @@
   <%= f.label :author %>
   <%= f.text_field :author %>
   <%= f.label :image %>
-  <%= f.text_field :image %>
-  <br>
+  <%= image_tag(@story.image) %>
+  <%= f.hidden_field :image, value: @story.image %>
+
   <%= f.submit %>
 <% end %>

@@ -7,6 +7,7 @@ class StoriesController < ApplicationController
 
   def new
     @story = Story.new
+    @story.image_dice
     render :new
   end
 

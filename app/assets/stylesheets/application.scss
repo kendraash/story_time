@@ -15,7 +15,9 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
-
+body {
+  background-color: #e6e6e6;
+}
 a {
 
   text-decoration: none;
@@ -45,5 +47,5 @@ a:hover {
   height: 300px;
   -webkit-border-radius: 300px; /* Saf3+, Chrome */
   border-radius: 300px; /* Opera 10.5, IE 9 */
-  -moz-border-radius: 300px; /* Disabled for FF1+ */ 
+  -moz-border-radius: 300px; /* Disabled for FF1+ */
 }
